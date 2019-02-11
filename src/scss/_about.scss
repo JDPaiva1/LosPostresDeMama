@@ -1,0 +1,36 @@
+.about-heading {
+  @media (min-width: 992px) {
+    .about-heading-img {
+      position: relative;
+      z-index: 0;
+    }
+    .about-heading-content {
+      margin-top: -5rem;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.our-story {
+  background: url(assets/our-story.jpg) no-repeat;
+  min-height: 500px;
+  width: 100%;
+
+  &-content {
+    margin-top: 50px;
+    height: 400px;
+    display: table;
+    width: 100%;
+
+    &-inner {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 10px;
+      @media (min-width: 768px) {
+          padding-left: 30px;
+          padding-right:30px;
+      }
+    }
+  }
+}
